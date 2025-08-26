@@ -20,7 +20,44 @@
 </head>
 
 <body>
-    <h1>Hello</h1>
+    <!-- header section starts here -->
+    <header class="flex flex-col md:flex-row justify-between items-center w-full md:w-11/12 mx-auto h-[100px]">
+        <div class="left flex w-[195px] h-[50px]">
+            <img class="w-[50px] h" src="./assets/logo.png" alt="A logo">
+            <h2 class="text-[#006747] font-extrabold ml-2">Emergency<br>Service</h2>
+        </div>
+        <div class="right flex gap-5 ">
+            <!-- love count  -->
+            <p class="flex justify-center items-center  w-[120px] h-[50px] bg-[#41FF6B10] rounded-3xl font-extrabold">
+                <span id="love-count">0</span><img class="block w-6 h-6 ml-3" src="./assets/heart.png"
+                    alt="A image of Heart"></p>
+            <!-- coin count -->
+            <p class="flex justify-center items-center w-[120px] h-[50px] bg-[#41FF6B10] rounded-3xl font-extrabold">
+                <span id="coin-count">100</span><img class="block w-6 h-6 ml-3" src="./assets/coin.png"
+                    alt="A image of Coin"></p>
+            <!-- copy count -->
+            <p
+                class="flex justify-center items-center w-[127px] h-[50px] rounded-3xl bg-[#00A63E] font-extrabold text-white">
+                <span id="copy-count" class="mr-3">0</span>Copy</p>
+        </div>
+    </header>
+    <main>
+        <!-- banner section starts here -->
+        <section class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-white text-center">
+            <img class="w[90px] h-[90px] block mx-auto py-2" src="./assets/logo-dark.png" alt="A dark logo">
+            <h2 class="font-bold text-[40px] font-hind">Emergency Service Directory</h2>
+            <p class="font-semibold  py-2 font-hind">Government Emergency Services at Your Fingertip - A Project by  Government of the People's Republic of Bangladesh</p>
+        </section>
+        <!-- card section starts here -->
+        <section class="border border-red-500 w-11/12 mx-auto grid grid-cols-12">
+            <div class=" border border-blue-500 col-span-9">
+                left
+            </div>
+            <div class="border border-green-500 col-span-3">
+                right
+            </div>
+        </section>
+    </main>
     <script src="./js/index.js"></script>
 </body>
 
