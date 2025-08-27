@@ -61,3 +61,19 @@ btnClear.addEventListener('click', function () {
 
 // Copy button
 
+const copyBtns = document.getElementsByClassName('btn-copy');
+for (const copyBtn of copyBtns) {
+    // increase copy count
+    copyBtn.addEventListener('click', function () {
+        const copyCount = Number(getElement('copy-count').innerText);
+        const totalCopyCount = copyCount + 1;
+        getElement('copy-count').innerText = totalCopyCount;
+
+        // showing alert message
+        const number = copyBtn.parentNode.parentNode.children[3].innerText;
+        alert(`Number is Copied: ${number}`);
+    })
+
+
+
+}
