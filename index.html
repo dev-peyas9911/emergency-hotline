@@ -21,39 +21,66 @@
 
 <body>
     <!-- header section starts here -->
-    <header class="flex flex-col md:flex-row justify-between items-center w-full md:w-11/12 mx-auto h-[100px]">
+    <header class="flex flex-col md:flex-row justify-between items-center w-full md:w-11/12 mx-auto my-6">
         <div class="left flex w-[195px] h-[50px]">
             <img class="w-[50px] h" src="./assets/logo.png" alt="A logo">
             <h2 class="text-[#006747] font-extrabold ml-2">Emergency<br>Service</h2>
         </div>
-        <div class="right flex gap-5 ">
+        <div class="right flex md:gap-5 mt-3 md:mt-0">
             <!-- love count  -->
-            <p class="flex justify-center items-center  w-[120px] h-[50px] bg-[#41FF6B10] rounded-3xl font-extrabold">
+            <p
+                class="flex justify-center items-center w-[100px] h-[50px]  md:w-[120px] md:h-[50px] bg-[#41FF6B10] rounded-3xl font-extrabold">
                 <span id="love-count">0</span><img class="block w-6 h-6 ml-3" src="./assets/heart.png"
-                    alt="A image of Heart"></p>
+                    alt="A image of Heart">
+            </p>
             <!-- coin count -->
-            <p class="flex justify-center items-center w-[120px] h-[50px] bg-[#41FF6B10] rounded-3xl font-extrabold">
+            <p
+                class="flex justify-center items-center w-[100px] h-[50px] md:w-[120px] md:h-[50px] bg-[#41FF6B10] rounded-3xl font-extrabold">
                 <span id="coin-count">100</span><img class="block w-6 h-6 ml-3" src="./assets/coin.png"
-                    alt="A image of Coin"></p>
+                    alt="A image of Coin">
+            </p>
             <!-- copy count -->
             <p
-                class="flex justify-center items-center w-[127px] h-[50px] rounded-3xl bg-[#00A63E] font-extrabold text-white">
-                <span id="copy-count" class="mr-3">0</span>Copy</p>
+                class="flex justify-center items-center w-[100px] h-[50px] md:w-[127px] md:h-[50px] rounded-3xl bg-[#00A63E] text-white">
+                <span id="copy-count" class="mr-3">0</span>Copy
+            </p>
         </div>
     </header>
-    <main>
+    <main class="bg-[#F2F2F2]">
         <!-- banner section starts here -->
-        <section class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-white text-center">
+        <section class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] text-white text-center p-3">
             <img class="w[90px] h-[90px] block mx-auto py-2" src="./assets/logo-dark.png" alt="A dark logo">
             <h2 class="font-bold text-[40px] font-hind">Emergency Service Directory</h2>
-            <p class="font-semibold  py-2 font-hind">Government Emergency Services at Your Fingertip - A Project by  Government of the People's Republic of Bangladesh</p>
+            <p class="font-semibold  py-2 font-hind">Government Emergency Services at Your Fingertip - A Project by
+                Government of the People's Republic of Bangladesh</p>
         </section>
         <!-- card section starts here -->
-        <section class="border border-red-500 w-11/12 mx-auto grid grid-cols-12">
+        <section class=" md:w-11/12 mx-auto grid grid-cols-12 mt-10">
             <div class=" border border-blue-500 col-span-9">
-                left
+                <!-- card 1 -->
+                <div class="max-w-[400px]  bg-white shadow[0px_2px_3px_0_#00000015] rounded-xl">
+                    <div class="p-8">
+                        <div class="flex justify-between items-center mb-4">
+                            <div class="bg-[#FFE3E2] rounded-2xl"><img class="p-3" src="./assets/emergency.png"
+                                    alt="A image of emergency"></div>
+                            <span class=""><i class="fa-regular fa-heart"></i></span>
+                        </div>
+                        <h3 class="font-hind font-bold text-2xl text-[#111111] mb-1">National Emergency Number</h3>
+                        <p class="font-roboto text-[18px] text-[#5C5C5C] mb-3">National Emergency</p>
+                        <p class="font-roboto text-[32px] font-bold text-[#111111] mb-1">900</p>
+                        <span class="bg-[#F2F2F2] text-[18px] px-4 py-1 rounded-2xl font-hind text-[#5C5C5C]">All</span>
+                        <div class="mt-5 flex justify-between">
+                            <button class="border border-[#D4D6D5] px-13 py-3 text-[#5C5C5C] rounded-lg"><i
+                                    class="fa-regular fa-copy mr-1"></i>Copy</button>
+                            <button class="px-13 py-3 text-[#5C5C5C] rounded-lg bg-[#00A63E] text-white"><i
+                                    class="fa-solid fa-phone mr-1"></i>Call</button>
+                        </div>
+                    </div>
+                </div>
+                
+                
             </div>
-            <div class="border border-green-500 col-span-3">
+            <div class="border border-green-500 md:col-span-3">
                 right
             </div>
         </section>
