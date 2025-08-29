@@ -40,7 +40,7 @@ for (const callBtn of callBtns) {
         const historyContainer = document.getElementById('history-container');
         const history = document.createElement('div');
         history.innerHTML = `
-        <div class="flex justify-between items-center bg-gray-200 mt-2 p-3">
+        <div class="flex justify-between items-center bg-gray-200 mt-2 p-3 rounded-lg">
                     <div>
                         <h1>${title}</h1>
                         <p>${number}</p>
@@ -72,8 +72,13 @@ for (const copyBtn of copyBtns) {
         // showing alert message
         const number = copyBtn.parentNode.parentNode.children[3].innerText;
         alert(`Number is Copied: ${number}`);
+
+        // copy the text and paste anywhere
+        const tempInput = document.createElement("input");
+        tempInput.value = number;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        document.execCommand("copy");
+        document.body.removeChild(tempInput);
     })
-
-
-
 }
